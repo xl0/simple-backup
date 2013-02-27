@@ -1,0 +1,10 @@
+G:zaytsev.su:4444:/var/gitrepos:/backup/xl0
+G:zaytsev.su:4444:/home/xl0/work:/backup/xl0
+G:zaytsev.su:4444:/var/www:/backup/xl0
+
+P:/backup/xl0:zuzuka:4444:/data/xl0/backup
+P:/home/xl0/work:zuzuka:4444:/data/xl0/backup
+
+
+#nx.local:4444:/home/xl0/work
+
