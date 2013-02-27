@@ -1,14 +1,14 @@
 #!/bin/bash
 
 
-log_file=/home/xl0/work/simple_backup/backup.log
+log_file=/home/xl0/work/simple-backup/backup.log
 
 function do_backups {
 	echo "starting backup on `date`"
 	for location in `grep -v ^# $1`
 	do
 		echo $location
-	
+
 		direction=`echo $location | cut -d: -f1`
 		echo "Direction: $direction"
 
@@ -52,10 +52,10 @@ function do_backups {
 			echo "Dst directory: $dst_dir"
 
 			rsync -ve "ssh -p $port" -a $src_dir $host:$dst_dir
-		elif
+		else
 			echo "WTF?"
 		fi
-			
+
 	done
 }
 
